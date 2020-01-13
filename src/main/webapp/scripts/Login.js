@@ -13,7 +13,7 @@ function signIn() {
 	xhr.onreadystatechange = function(){
 		if(this.readyState === 4 && this.status === 200) {
 			// The request was sent successfully and the response status is 200 (OK)
-			sessionStorage.setItme('currentUser', this.responseText);
+			sessionStorage.setItem('currentUser', this.responseText);
 			//Store the response object in session if need be
 			window.location = "http://localhost:8080/project-1/employeeHome.html";
 			//change the web page 
